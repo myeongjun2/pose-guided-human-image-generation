@@ -2,6 +2,9 @@
 
 ![img1](https://user-images.githubusercontent.com/58557243/71240437-783d6e80-234c-11ea-9ad6-d635b40e554a.PNG)
 
+## Reference
+- [pose-gan](https://github.com/AliaksandrSiarohin/pose-gan)
+
 ## Prepare Data
 - DownLoad Market Dataset
   - [Market Dataset](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view)
@@ -23,7 +26,11 @@
   ```
 
 ## Training
-
+1. We need to divide the train dataset and test dataset from the whole fasion dataset.
+```
+python split_fasion_dataset.py
+```
+2. 
 
 ## Requirements
 - python == 3.5
