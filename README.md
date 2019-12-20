@@ -42,8 +42,15 @@ python train.py --output_dir output/full_stickhm_conv_train_market --checkpoints
   ```
 
 ## Testing
+ - [Download weights](https://drive.google.com/open?id=1Wqtq53AplM1K3uLJih9lvn-XCohTfKH1)
  - market
+ ```
+ python test.py --load_generated_images 0 --generator_checkpoint output/market/epoch_089_generator.h5 --generated_images_dir output/full_stickhm_conv_market_test --pose_rep_type stickhm --warp_skip conv --dataset market --l1_penalty_weight 0.01 --nn_loss_area_size 3 --batch_size 4 --content_loss_layer block1_conv2 --number_of_epochs 90
+ ```
  - fasion
+ ```
+ python test.py --load_generated_images 0 --generator_checkpoint output/fasion/epoch_089_generator.h5 --generated_images_dir output/full_stickhm_conv_fasion_test --pose_rep_type stickhm --warp_skip conv --dataset fasion --l1_penalty_weight 0.01 --nn_loss_area_size 3 --batch_size 4 --content_loss_layer block1_conv2 --number_of_epochs 90
+ ```
 
 ## Requirements
 - python == 3.5
