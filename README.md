@@ -32,12 +32,18 @@
 python split_fasion_dataset.py
 ```
 2. training FULL(JointPair + DCSU) model
+  - market
 ```
 python train.py --output_dir output/full_stickhm_conv_train_market --checkpoints_dir output/full_stickhm_conv_train_market --pose_rep_type stickhm --warp_skip conv --dataset market --l1_penalty_weight 0.01 --nn_loss_area_size 3 --batch_size 4 --content_loss_layer block1_conv2 --number_of_epochs 90
 ```
+  - fasion
+  ```
+  python train.py --output_dir output/full_stickhm_conv_train_fasion --checkpoints_dir output/full_stickhm_conv_train_fasion --pose_rep_type stickhm --warp_skip conv --dataset fasion --l1_penalty_weight 0.01 --nn_loss_area_size 3 --batch_size 4 --content_loss_layer block1_conv2 --number_of_epochs 90
+  ```
 
 ## Testing
-
+ - market
+ - fasion
 
 ## Requirements
 - python == 3.5
